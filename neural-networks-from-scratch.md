@@ -6,12 +6,14 @@ YouTube: `https://www.youtube.com/watch?v=tMrbN67U9d4&list=PLQVvvaa0QuDcjD5BAw2D
 Source:
 
 1. Intro and Neuron Code
-2.
-3.
-4.
+2. Coding a Layer
+3. The Dot Product
+4. Batches, Layers, and Objects
 5.
 6.
 7.
+8.
+9.
 
 
 ## Notes
