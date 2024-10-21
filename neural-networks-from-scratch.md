@@ -9,7 +9,7 @@ Source:
 2. Coding a Layer
 3. The Dot Product
 4. Batches, Layers, and Objects
-5.
+5. Hidden Layer Activation Functions
 6.
 7.
 8.
@@ -22,3 +22,29 @@ Source:
 
 `$ cd neural-networks-from-scratch`
 `$ pipenv shell`
+
+### Install
+
+`$ pipenv install numpy matplotlib nnfs`
+
+### Websites
+
+`https://cs231n.github.io/neural-networks-case-study`
+
+### Activation Functions
+
+#### Step Function
+
+y = 1  x > 0
+    0  x <= 0
+    
+#### Sigmoid Function
+
+         1
+y =  --------
+           -x
+      1 + e
+#### Rectified Linear Function
+
+y = x  x > 0
+    0  x <= 0
