@@ -12,7 +12,7 @@ Source:
 4. Batches, Layers, and Objects
 5. Hidden Layer Activation Functions
 6. Softmax Activation
-7.
+7. Calculating Loss with Categorical Cross-Entropy
 8.
 9.
 
@@ -20,7 +20,7 @@ Source:
 
 ### Start Python Environment
 
-`$ cd neural-networks-from-scratch`
+`$ cd neural-networks-from-scratch`<br>
 `$ pipenv shell`
 
 ### Install
@@ -65,8 +65,29 @@ e ~ 2.718281828459045
 
 #### Softmax Activation Function
 
-Exponentiation + Normalization
-
+* Exponentiation + Normalization
+* Output layer
+  
 $$
 S_{i,j}=\frac{e^{z_{i,j}}}{\Sigma_{l=1}^Le^{z_{i,j}}}
+$$
+
+#### Categorical Cross-Entropy
+
+* Calculating Loss
+
+$$
+L_i=-\displaystyle\sum_{j} y_{i,j}log(\hat{y}_{i,j})
+$$
+$$
+L_i=-log(\hat{y}_{i,k})
+$$
+##### Natural logarithm
+$$
+y = log_ex=ln(x)
+$$
+###### Euler's number
+$$
+e\approx2.718281828459045\\
+e^x=b
 $$
