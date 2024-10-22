@@ -1,4 +1,5 @@
 # Neural Networks from Scratch
+
 by `sentdex`
 
 YouTube: `https://www.youtube.com/watch?v=tMrbN67U9d4&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3&index=3`
@@ -10,11 +11,10 @@ Source:
 3. The Dot Product
 4. Batches, Layers, and Objects
 5. Hidden Layer Activation Functions
-6.
+6. Softmax Activation
 7.
 8.
 9.
-
 
 ## Notes
 
@@ -35,16 +35,38 @@ Source:
 
 #### Step Function
 
-y = 1  x > 0
-    0  x <= 0
-    
+$$
+\begin{aligned}
+y = \text{1 }x \gt 0\\
+    \text{0 } x \leq 0
+\end{aligned}
+$$
+
 #### Sigmoid Function
 
-         1
-y =  --------
-           -x
-      1 + e
+$$
+y = \frac{1}{1 + e^{-x}}
+$$
+
 #### Rectified Linear Function
 
-y = x  x > 0
-    0  x <= 0
+$$
+\begin{aligned}
+y = x\text{ } x > 0\\
+    \text{0 } x \leq 0
+\end{aligned}
+$$
+
+#### Exponential Function
+
+$$y = e^x$$
+
+e ~ 2.718281828459045
+
+#### Softmax Activation Function
+
+Exponentiation + Normalization
+
+$$
+S_{i,j}=\frac{e^{z_{i,j}}}{\Sigma_{l=1}^Le^{z_{i,j}}}
+$$
